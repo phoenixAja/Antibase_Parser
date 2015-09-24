@@ -35,7 +35,7 @@ Where the path in quotes is the file path to the R.exe script described above. Y
 ###Understanding Script Output:
 >This script will output data in 2 formats, one will be all the peaks detected with the LCMS prior to processing (file_LCMS_RawData.csv) and the other file will contain the processed data once matched against Antibase, with all masses that matched one or less times against Antibase (file_two_or_less_ABMatch.csv). The file prefix will be the netCDF file name prefix to easily identify which output file matches to a certain netCDF file.
 
-> Column Names:
+> Column Names (for Raw Data):
 + m/z : weighted (by intensity) mean of peak m/z
 + mzmin : m/z of minimum step
 + mzmax : m/z of maximum step
@@ -49,3 +49,13 @@ Where the path in quotes is the file path to the R.exe script described above. Y
 + i : rank of peak identified in merged EIC
 + sn : signal to noise ratio of the peak
 + Table 1: LCMS_RawData file output
+
+> Column Names (Parsed Data):
++ Masses : Masses processed from raw LCMS data that had one or fewer matches against AntiBase.
++ Retention : Retention time of masses matched one or less time against AntiBase.
++ Fractions : Which fraction mass falls into based on its retention time.
++ Wells : Well ID formulated from the retention time, fractions number, and input file name
++ Times_matched : How many times compound was matched against Antibase
++ Names : Name of any matched natural product (if any exist).
++ Sources : which source the natural product matched originates from
++ Type_match : Whether the match of the mass to antibase was a result from the mass alone, the mass minus a hydrogen ion (m –H) or mass minus a sodium ion (m – Na)
