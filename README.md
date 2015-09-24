@@ -64,5 +64,5 @@ Where the path in quotes is the file path to the R.exe script described above. Y
 >I am expecting some issues to occur when operating this script on a new computer (because script has only been tested on one computer/ only one OS thus far ). Please feel free to email me at Phoenix@PhoenixLogan.net if you have any questions / trouble shooting help.
 
 ###Useful Websites:
->[Information regarding R programming Setup:](https://cran.r-project.org/doc/manuals/r-release/R-admin.html)
-[Information about Bioconductor package XCMS:](http://bioconductor.org/packages/release/bioc/html/xcms.html)
+> + [Information regarding R programming Setup:](https://cran.r-project.org/doc/manuals/r-release/R-admin.html)
+> + [Information about Bioconductor package XCMS:](http://bioconductor.org/packages/release/bioc/html/xcms.html)
