@@ -59,3 +59,10 @@ Where the path in quotes is the file path to the R.exe script described above. Y
 + Names : Name of any matched natural product (if any exist).
 + Sources : which source the natural product matched originates from
 + Type_match : Whether the match of the mass to antibase was a result from the mass alone, the mass minus a hydrogen ion (m –H) or mass minus a sodium ion (m – Na)
+
+###Further Questions or Concerns:
+>I am expecting some issues to occur when operating this script on a new computer (because script has only been tested on one computer/ only one OS thus far ). Please feel free to email me at Phoenix@PhoenixLogan.net if you have any questions / trouble shooting help.
+
+###Useful Websites:
+>[Information regarding R programming Setup:](https://cran.r-project.org/doc/manuals/r-release/R-admin.html)
+[Information about Bioconductor package XCMS:](http://bioconductor.org/packages/release/bioc/html/xcms.html)
