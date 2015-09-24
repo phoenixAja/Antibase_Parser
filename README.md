@@ -1,5 +1,5 @@
 # Antibase Parser
-##Author: Phoenix Logan
+Phoenix Logan
 
 ###Introduction:
 >This guide is designed to help you use the AntiBase Parser R Script to analyze LCMS data. 
