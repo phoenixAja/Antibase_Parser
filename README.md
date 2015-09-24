@@ -21,7 +21,7 @@ The files to be analyzed need to be in a format following this example:
 > + Option 1. to run the script on windows open the command prompt, navigate to directory with LCMS data to analyze, and enter: R <Antibase_parser.R> AB_OUT.out
  _Antibase_parser.R Script (recommended to be in the same directory as the LCMS files to be analyzed)._
  
-+ Option 2. If you have Cygwin installed or are using Mac OS or Linux (any flavor) use this following command in terminal: R CMD BATCH Antibase_mass_parser.R
+> + Option 2. If you have Cygwin installed or are using Mac OS or Linux (any flavor) use this following command in terminal: R CMD BATCH Antibase_mass_parser.R
  _IMPORTANT: You will also need to put the R.bat script in the same directory as the LCMS files, along with Antibase_parser.R script, and antibase_tableout.csv (Directions on creating the R.bat script file are below)._
 
 >**Creating the R.bat script file:**
