@@ -371,6 +371,7 @@ run_program <- function(file){
 
 file_lst <- list.files(".", pattern=".CDF", recursive = TRUE)
 
-sapply(file_lst[], run_program)
+# run program for all cdf files in directory
+sapply(file_lst, run_program)
 
 
