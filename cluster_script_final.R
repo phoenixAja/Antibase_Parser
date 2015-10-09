@@ -11,7 +11,7 @@ args <- commandArgs(trailingOnly = TRUE)
 myDir = args[1]
 setwd(myDir)
 
-run_xcms <- function() {
+run_xcms <- function(plot_title) {
   # Analyze data and return graph
   xset <- xcmsSet(scanrange= c(245, 1685))
   xsg1 <- group(xset, method = "mzClust", mzppm = 20, mzabs =0, minsamp =3, minfrac =0)
@@ -20,10 +20,9 @@ run_xcms <- function() {
   for (r in 1:ncol(values))
     values[,r] <- (values[,r] / sum(values[,r]))
   fit <-pvclust(values, method.dist = "cor", nboot=1000)
-<<<<<<< HEAD
   png(file=plot_title, units = "in", width=11, height=8.5, res=300)
   plot(fit, main = "Hierarchal Cluster of Marine Streptomyces", print.pv = FALSE, print.num=FALSE)
   dev.off()
 }
 
-run_xcms()
+run_xcms(args[2])
