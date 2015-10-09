@@ -21,13 +21,15 @@ The files to be analyzed need to be in a format following this example:
 ###Different Computing Enviornments:
 > + Option 1. to run the script on windows open the command prompt, first you need to find teh Rscript.exe file, usually this is in a location similar to:
 
-> _/c/Program\ Files/R/R-3.2.X/bin/Rscript.exe **where R-3.2.X is your current version of R_
+> **/c/Program\ Files/R/R-3.2.X/bin/Rscript.exe **where R-3.2.X is your current version of R**
 
-> Next, you need to navigate to directory with LCMS data to analyze, and enter: /c/Program\ Files/R/R-3.2.X/bin/Rscript.exe    Antibase_parser_v2.R 
+> Next, you need to navigate to directory with LCMS data to analyze, and enter:
+
+> **/c/Program\ Files/R/R-3.2.X/bin/Rscript.exe Antibase_parser_v2.R** 
  
 > + Option 2. If you are using Mac OS or Linux (any flavor) use this following command in terminal: 
 
-> Rscript Antibase_parser_v2.R
+> **Rscript Antibase_parser_v2.R**
 
 > _IMPORTANT: You will need to put the antibase_tableout.csv in the same directory as the LCMS files, along with Antibase_parser_v2.R script._
 
