@@ -20,9 +20,9 @@ run_xcms <- function(plot_title) {
   for (r in 1:ncol(values))
     values[,r] <- (values[,r] / sum(values[,r]))
   fit <-pvclust(values, method.dist = "cor", nboot=1000)
-  png(file=plot_title, units = "in", width=11, height=8.5, res=300)
+  png(file=paste0(plot_title, "png"), units = "in", width=11, height=8.5, res=300)
   plot(fit, main = "Hierarchal Cluster of Marine Streptomyces", print.pv = FALSE, print.num=FALSE)
   dev.off()
-}
+  }
 
 run_xcms(args[2])
