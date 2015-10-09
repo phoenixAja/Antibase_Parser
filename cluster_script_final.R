@@ -17,7 +17,8 @@ run_xcms <- function() {
   values <- groupval(xsg2, value = "into")
   for (r in 1:ncol(values))
     values[,r] <- (values[,r] / sum(values[,r]))
+  fit <-pvclust(values, method.dist = "cor", nboot=1000)
+  plot(fit, main = "Hierarchal Cluster of Marine Streptomyces", print.pv = FALSE, print.num=FALSE)
 }
 
-fit <-pvclust(values, method.dist = "cor", nboot=1000)
-plot(fit, main = "Hierarchal Cluster of Marine Streptomyces", print.pv = FALSE, print.num=FALSE)
+run_xcms()
