@@ -16,15 +16,20 @@ The files to be analyzed need to be in a format following this example:
 >The most important part of naming is that the F4 (or F1, F2, F3) is separated by an underscore separating it from the strain name (so that wells can be correctly identified).
 
 ###Running the Script:
->General Notes: This script is designed to run on R version 3.2.0, but any current version of R should work. You will also need to install the package for xcms via the R console (once R is installed) by using the command install.packages(“xcms”) see figure 1 to the right for further information.
+>General Notes: This script is designed to run on R version 3.2.0, but any current version of R should work. You will also need to install the package for xcms via the R console (once R is installed) by using the command install.packages(“xcms”).
 
 ###Different Computing Enviornments:
 > + Option 1. to run the script on windows open the command prompt, first you need to find teh Rscript.exe file, usually this is in a location similar to:
-_/c/Program\ Files/R/R-3.2.X/bin/Rscript.exe **where R-3.2.X is your current version of R_
+
+> _/c/Program\ Files/R/R-3.2.X/bin/Rscript.exe **where R-3.2.X is your current version of R_
+
 > Next, you need to navigate to directory with LCMS data to analyze, and enter: /c/Program\ Files/R/R-3.2.X/bin/Rscript.exe    Antibase_parser_v2.R 
  
-> + Option 2. If you are using Mac OS or Linux (any flavor) use this following command in terminal: Rscript Antibase_parser_v2.R
- _IMPORTANT: You will need to put the antibase_tableout.csv in the same directory as the LCMS files, along with Antibase_parser_v2.R script._
+> + Option 2. If you are using Mac OS or Linux (any flavor) use this following command in terminal: 
+
+> Rscript Antibase_parser_v2.R
+
+> _IMPORTANT: You will need to put the antibase_tableout.csv in the same directory as the LCMS files, along with Antibase_parser_v2.R script._
 
 >**“C:\Program Files\R\R-3.2.0\bin\Rscript.exe” Antibase_parser.R**
 Where the path in quotes is the file path to the R.exe script described above. You must put this file in the same directory as the LCMS file, the antibase_tableout.csv, and Antibase_parser_v2.R files.
