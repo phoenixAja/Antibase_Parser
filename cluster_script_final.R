@@ -1,4 +1,4 @@
-#Author Chris Thomas
+#Author Chris Thomas Phoenix Logan
 ## THIS SCRIPT GENERATES Marine Streptomyces STRAINS CLUSTER
 
 
