@@ -19,19 +19,15 @@ The files to be analyzed need to be in a format following this example:
 >General Notes: This script is designed to run on R version 3.2.0, but any current version of R should work. You will also need to install the package for xcms via the R console (once R is installed) by using the command install.packages(“xcms”) see figure 1 to the right for further information.
 
 ###Different Computing Enviornments:
-> + Option 1. to run the script on windows open the command prompt, navigate to directory with LCMS data to analyze, and enter: R <Antibase_parser.R> AB_OUT.out
- _Antibase_parser.R Script (recommended to be in the same directory as the LCMS files to be analyzed)._
+> + Option 1. to run the script on windows open the command prompt, first you need to find teh Rscript.exe file, usually this is in a location similar to:
+_/c/Program\ Files/R/R-3.2.X/bin/Rscript.exe **where R-3.2.X is your current version of R_
+> Next, you need to navigate to directory with LCMS data to analyze, and enter: /c/Program\ Files/R/R-3.2.X/bin/Rscript.exe    Antibase_parser_v2.R 
  
-> + Option 2. If you have Cygwin installed or are using Mac OS or Linux (any flavor) use this following command in terminal: R CMD BATCH Antibase_mass_parser.R
- _IMPORTANT: You will also need to put the R.bat script in the same directory as the LCMS files, along with Antibase_parser.R script, and antibase_tableout.csv (Directions on creating the R.bat script file are below)._
+> + Option 2. If you are using Mac OS or Linux (any flavor) use this following command in terminal: Rscript Antibase_parser_v2.R
+ _IMPORTANT: You will need to put the antibase_tableout.csv in the same directory as the LCMS files, along with Antibase_parser_v2.R script._
 
->**Creating the R.bat script file:**
->The purpose of this file is to tell the R program where the R.exe file is. Which on windows is in the Program Files Directory: _Example for Windows: “C:\Program Files\R\R-3.2.0\bin\R.exe”_
-
->To create the R.bat file, open your favorite text editor (Vim, emacs, Notepad++, Nano) and write this line at the top of your script:
-
->**“C:\Program Files\R\R-3.2.0\bin\R.exe” CMD BATCH Antibase_parser.R**
-Where the path in quotes is the file path to the R.exe script described above. You must put this file in the same directory as the LCMS file, the antibase_tableout.csv, and Antibase_parser.R files.
+>**“C:\Program Files\R\R-3.2.0\bin\Rscript.exe” Antibase_parser.R**
+Where the path in quotes is the file path to the R.exe script described above. You must put this file in the same directory as the LCMS file, the antibase_tableout.csv, and Antibase_parser_v2.R files.
 
 ###Understanding Script Output:
 >This script will output data in 2 formats, one will be all the peaks detected with the LCMS prior to processing (file_LCMS_RawData.csv) and the other file will contain the processed data once matched against Antibase, with all masses that matched one or less times against Antibase (file_two_or_less_ABMatch.csv). The file prefix will be the netCDF file name prefix to easily identify which output file matches to a certain netCDF file.
